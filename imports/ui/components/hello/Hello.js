@@ -19,7 +19,7 @@ const Hello = {
    * state. You can also use a custom reactive data source as long
    * as implements the methods of ReactiveDict (get, set, all etc.).
    */
-  state: new ReactiveDict({ active: false }),
+  state: () => new ReactiveDict({ active: false }),
 
   /**
    * Optional function if you need to resolve attributes for the component

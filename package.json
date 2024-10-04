@@ -2,14 +2,14 @@
   "name": "tests",
   "private": true,
   "scripts": {
-    "start": "meteor run --settings=settings.json --port=3434",
+    "start": "meteor run --settings=settings.json --port=4343",
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
     "@babel/runtime": "^7.23.5",
-    "@blazeui/theme-milkyway": "file:../themes/milkyway",
+    "@blazeui/theme-milkyway": "^1.0.0",
     "autoprefixer": "^10.4.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
