@@ -3,6 +3,7 @@ import * as Components from 'meteor/blazeui:components'
 import '@blazeui/theme-milkyway/milkyway.css'
 import '../imports/ui/components/header/Header'
 import '../imports/ui/components/hello/Hello'
+import '../imports/ui/components/icons/icons'
 import './main.html'
 import './main.css'
 

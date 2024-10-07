@@ -10,7 +10,7 @@
         <div class="col w-full md:w-3/4 lg:w-1/2 ml-auto mr-auto">
             {{#Headline1 class="w-full text-center"}}🔥 Welcome to BlazeUI! 🔥{{/Headline1}}
             {{#Alert class="mt-5"}}
-                <span class="fa-solid fa-exclamation-circle"></span>
+                {{> ExclamationCircleIcon class="w-4 h-4 fill-foreground"}}
                 {{#AlertTitle}}Heads up!{{/AlertTitle}}
                 {{#AlertDescription}}
                     <p>
@@ -37,10 +37,10 @@
                               class="bg-primary text-primary-foreground"
                               rel="no-referer no-opener"
                               target="_blank"}}
-                        <span class="whitespace-nowrap">
-                                <span class="fa-solid fa-external-link"></span>
-                                https://github.com/blazeui/blazeui
-                            </span>
+                        <span class="whitespace-nowrap px-1">
+                          {{> ExternalLinkIcon class="w-4 inline h-4 fill-primary-foreground"}}
+                          https://github.com/blazeui/blazeui
+                        </span>
                     {{/Anchor}}
                 {{/AlertDescription}}
             {{/Alert}}
